@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    color: white;
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.Ptitle {
+    text-align: center;
+}
+div.note, div.note-title {
+    border-left-color: blue;
+}
+.note-title::before {
+    content: url();
+}
+div.note {
+    padding: 0 0.8em;
+    padding-bottom: 0.8em;
+    margin: 0.8em 0;
+    border-radius: 2.5px;
+    border-left-width: 6px;
+    border-left-style: solid;
+    background-color: #111111;
+}
+.note-title {
+    font-weight: bold;
+    margin: 0 -0.8rem;
+    padding: 0.4rem 0.6rem 0.4rem 2.5rem;
+    position: relative;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.entret {
+    margin-left: 250px;
+    font-size: 30px;
+    float: left;
+}
+.spantxt {
+    font-size: 15px;
+    color: rgb(187, 187, 187);
+}
+.sideinfo {
+    background-color: rgb(27, 27, 27);
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    height: 20%;
+}
+
+.info1 {
+    text-align: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
