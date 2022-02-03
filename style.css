@@ -9,24 +9,38 @@ body {
 .Ptitle {
     text-align: center;
 }
-div.note, div.note-title {
-    border-left-color: blue;
+div.note {
+    border-left-color: #0060DF;
 }
-.note-title::before {
-    content: url();
+p.note-title {
+    background-color: #0060DF;
+    color: white;
+}
+.exc {
+    border-radius: 50px;
 }
 div.note {
     padding: 0 0.8em;
     padding-bottom: 0.8em;
-    margin: 0.8em 0;
+    margin: auto;
     border-radius: 2.5px;
     border-left-width: 6px;
     border-left-style: solid;
     background-color: #111111;
+    width: 50%;
 }
-.note-title {
+.noteP {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+p.note-title {
     font-weight: bold;
-    margin: 0 -0.8rem;
+    margin: 0 -1.4rem;
     padding: 0.4rem 0.6rem 0.4rem 2.5rem;
     position: relative;
     -moz-user-select: none;
@@ -34,7 +48,6 @@ div.note {
     -ms-user-select: none;
     user-select: none;
 }
-
 .entret {
     margin-left: 250px;
     font-size: 30px;
@@ -81,4 +94,46 @@ div.note {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+div.notecommands {
+    padding: 0 0.8em;
+    padding-bottom: 0.8em;
+    margin-left: 40px;
+    border-radius: 2.5px;
+    border-left-width: 6px;
+    border-left-style: solid;
+    background-color: #111111;
+    font-size: 5px;
+    border-left-color: #b4df1a;
+}
+.userstyle {
+    color: rgb(166, 182, 19);
+    font-size: 15px;
+}
+.objectstyle {
+    color: green;
+    font-size: 15px;
+}
+.opcionalstyle {
+    color: rgb(66, 66, 66);
+    font-size: 15px;
+}
+.textstyle {
+    color: rgb(64, 169, 255);
+    font-size: 15px;
+}
+.serverstyle {
+    color: darkgoldenrod;
+    font-size: 15px;
+}
+.intstyle {
+    color: lightblue;
+    font-size: 15px;
+}
+.filestyle {
+    color: indigo;
+    font-size: 15px;
+}
+hr {
+    border-color: red;
 }
